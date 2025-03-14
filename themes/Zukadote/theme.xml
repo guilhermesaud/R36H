@@ -1,0 +1,180 @@
+<!--
+Version:		1.0
+Author:			Zukadote
+-->
+
+<theme defaultView="grid">
+	<formatVersion>7</formatVersion>
+	
+	<include>./_art/xml/artworklogos.xml</include>
+	<include>./_art/xml/hidden.xml</include>
+	<include>./_art/gamelistview/basicview.xml</include>
+	<include>./_art/gamelistview/gridview.xml</include>
+	
+
+	<variables>
+		<mainFont>./_art/fonts/Acre.otf</mainFont>
+		<subset.colorset>Font Color</subset.colorset>
+		<bgset>Background</bgset>
+		<systemview>System Icon Style</systemview>
+		<gamelistview>Detailed Gamelist View Style</gamelistview>
+		<gridselection>Gridview Selection</gridselection>
+		<tabb>Show Top and Bottom Bar</tabb>
+		<forceupper>Force Uppercase</forceupper>
+	</variables>
+	
+
+
+	<!-- MENU DE CORES -->
+	<subset name="colorset" displayName="${subset.colorset}">
+		<include name="white">./_art/colors/white.xml</include>
+		<include name="black">./_art/colors/black.xml</include>
+	</subset>
+
+
+	<!-- MENU DE BACKGROUND -->
+	<subset name="bgset" displayName="${bgset}">
+		<include name="default_01">./_art/background/default_01.xml</include>
+		<include name="default_02">./_art/background/default_02.xml</include>
+		<include name="black_01">./_art/background/black_01.xml</include>
+		<include name="blue_01">./_art/background/blue_01.xml</include>
+		<include name="blue_02">./_art/background/blue_02.xml</include>
+		<include name="blue_03">./_art/background/blue_03.xml</include>
+		<include name="blue_04">./_art/background/blue_04.xml</include>
+		<include name="blue_05">./_art/background/blue_05.xml</include>
+		<include name="blue_06">./_art/background/blue_06.xml</include>
+		<include name="blue_07">./_art/background/blue_07.xml</include>
+		<include name="cream_coffee">./_art/background/cream_coffee.xml</include>
+		<include name="green_01">./_art/background/green_01.xml</include>
+		<include name="green_02">./_art/background/green_02.xml</include>
+		<include name="green_03">./_art/background/green_03.xml</include>
+		<include name="green_04">./_art/background/green_04.xml</include>
+		<include name="green_05">./_art/background/green_05.xml</include>
+		<include name="green_06">./_art/background/green_06.xml</include>
+		<include name="green_07">./_art/background/green_07.xml</include>
+		<include name="green_08">./_art/background/green_08.xml</include>
+		<include name="green_09">./_art/background/green_09.xml</include>
+		<include name="green_10">./_art/background/green_10.xml</include>
+		<include name="grey_01">./_art/background/grey_01.xml</include>
+		<include name="grey_02">./_art/background/grey_02.xml</include>
+		<include name="grey_03">./_art/background/grey_03.xml</include>
+		<include name="grey_04">./_art/background/grey_04.xml</include>
+		<include name="grey_05">./_art/background/grey_05.xml</include>
+		<include name="light_01">./_art/background/light_01.xml</include>
+		<include name="orange_01">./_art/background/orange_01.xml</include>
+		<include name="orange_02">./_art/background/orange_02.xml</include>
+		<include name="pink_01">./_art/background/pink_01.xml</include>
+		<include name="pink_02">./_art/background/pink_02.xml</include>
+		<include name="pink_03">./_art/background/pink_03.xml</include>
+		<include name="pink_blue_01">./_art/background/pink_blue_01.xml</include>
+		<include name="purple_01">./_art/background/purple_01.xml</include>
+		<include name="purple_02">./_art/background/purple_02.xml</include>
+		<include name="purple_03">./_art/background/purple_03.xml</include>
+		<include name="purple_04">./_art/background/purple_04.xml</include>
+		<include name="red_01">./_art/background/red_01.xml</include>
+		<include name="red_02">./_art/background/red_02.xml</include>
+		<include name="red_03">./_art/background/red_03.xml</include>
+		<include name="salmao_01">./_art/background/salmao_01.xml</include>
+		<include name="switch_01">./_art/background/switch_01.xml</include>
+		<include name="switch_02">./_art/background/switch_02.xml</include>
+	</subset>
+
+	<!-- MENU DE MENU -->
+	<subset name="menuview" displayName="${menuview}">
+		<include name="default">./_art/menuview/default.xml</include>
+		<include name="blue">./_art/menuview/blue.xml</include>
+		<include name="cyan">./_art/menuview/cyan.xml</include>
+		<include name="green">./_art/menuview/green.xml</include>
+		<include name="grey">./_art/menuview/grey.xml</include>
+		<include name="lilas">./_art/menuview/lilas.xml</include>
+		<include name="orange">./_art/menuview/orange.xml</include>
+		<include name="pink">./_art/menuview/pink.xml</include>
+		<include name="red">./_art/menuview/red.xml</include>
+		<include name="white">./_art/menuview/white.xml</include>
+	</subset>
+
+
+	<!-- MENU DE TAMANHO -->
+	<subset name="systemview" displayName="${systemview}">
+		<include name="default">./_art/systemview/default.xml</include>
+		<include name="medium">./_art/systemview/medium.xml</include>
+		<include name="large">./_art/systemview/large.xml</include>
+	</subset>
+	
+
+
+	<!-- MENU DE METADATA -->
+	<subset name="gamelistview" displayName="${gamelistview}">
+		<include name="w/ Metadata">./_art/gamelistview/withmeta.xml</include>
+		<include name="No Metadata">./_art/gamelistview/nometa.xml</include>
+		<include name="w/ Description">./_art/gamelistview/withdescription.xml</include>
+	</subset>
+
+
+
+	<!-- MENU DE GRID -->
+	<subset name="Grid Selection" displayName="${gridselection}">
+		<include name="Default">./_art/xml/gridcenterselectionwithloop.xml</include>
+		<include name="Centered wo/Loop">./_art/xml/gridcenterselection.xml</include>
+		<include name="Uncentered w/Loop">./_art/xml/gridloop.xml</include>
+		<include name="Uncentered wo/Loop">./_art/xml/gridnoloop.xml</include>
+	</subset>
+	
+
+
+	<!-- MENU DE STATUS BAR -->
+	<subset name="Top and Bottom Bar" displayName="${tabb}">
+		<include name="yes">./_art/xml/topandbottomline.xml</include>
+		<include name="no"/>
+	</subset>
+	
+
+
+	<!-- MENU DE UPPERCASE -->
+	<subset name="Force Uppercase" displayName="${forceupper}">
+		<include name="System Name">./_art/xml/forceuppercasesystemname.xml</include>
+		<include name="System Name and Gamelist">./_art/xml/forceuppercaseall.xml</include>
+		<include name="Gamelist">./_art/xml/forceuppercasegamelist.xml</include>
+		<include name="no"/>
+	</subset>
+
+
+	<view name="screen">
+     	<batteryIndicator name="batteryIndicator">
+     	   	<fontPath>./_art/fonts/mania.otf</fontPath>
+     	   	<pos>0.889 0.07</pos>
+    		<size>0.05 0.05</size>
+    		<color>FFFFFF</color>
+     	   	<itemSpacing>0.01</itemSpacing>
+     	   	<networkIcon>./_art/svg/wifi-vertical.svg</networkIcon>
+     	   	<zIndex>10</zIndex>
+     	</batteryIndicator>
+		
+		<text name="clock">
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.03</fontSize>
+			<color>${mainColor}</color>
+			<pos>0.93 0.94</pos>
+			<size>0.4 0.039</size>
+			<fontPath>./_art/fonts/mania.otf</fontPath>
+			<alignment>left</alignment>
+			<verticalAlignment>center</verticalAlignment>
+		</text>
+   </view>
+	
+
+	<!--
+	<view name="system">
+	    <sound name="bgsound">
+	        <path>./_art/sounds/Linkin_Park_-_Lying_from_You_8_bit.ogg</path>
+	    </sound>
+	</view>
+	-->
+
+
+	<view name="system, video, detailed, basic, grid">
+	<helpsystem name="help">
+		<origin>-9 1</origin>
+	</helpsystem>
+	</view>  
+</theme>

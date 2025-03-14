@@ -1,0 +1,9 @@
+<theme>
+<formatVersion>7</formatVersion>
+	<view name="grid">
+	<imagegrid name="gamegrid">
+		<centerSelection>true</centerSelection>
+		<scrollLoop>true</scrollLoop>
+	</imagegrid>
+	</view>
+</theme>

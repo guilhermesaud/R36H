@@ -1,0 +1,159 @@
+<theme>
+<formatVersion>7</formatVersion>
+
+    <view name="detailed,video">
+
+
+    <!-- ============================================================ -->
+    <!--           BARRA SUPERIOR                                     -->
+    <!-- ============================================================ -->
+
+	<text name="system_name_1" extra="true">
+		<text>${system.fullName}</text>
+		<size>0.743 0.015</size>
+		<pos>0.06 0.08</pos>
+		<origin>0 0</origin>
+		<fontSize>0.045</fontSize>
+		<alignment>left</alignment>
+		<fontPath>./../fonts/mania.ttf</fontPath>
+		<!--<fontPath>${mainFont}</fontPath>-->
+	</text>
+
+	<image name="arrowblock" extra="true">
+		<pos>0.015 0.058</pos>
+		<path>./../_art/assets/arrow_block.svg</path>
+		<size>0.033 0.057</size>
+		<origin>0 0</origin>
+	</image>
+
+	<text name="clock">
+		<fontPath>${mainFont}</fontPath>
+		<fontSize>0.03</fontSize>
+		<color>${mainColor}</color>
+		<pos>0.92 0.95</pos>
+		<size>0.4 0.039</size>
+		<alignment>left</alignment>
+		<verticalAlignment>center</verticalAlignment>
+	</text>
+
+	<!-- ============================================================ -->
+
+
+
+
+    <!-- ============================================================ -->
+    <!--           GAME LIST                                          -->
+    <!-- ============================================================ -->
+
+	<image name="gamelist_dark_base_shadow" extra="true">
+		<path>./../assets/gamelist/gamelist-background-shadow-1.png</path>
+		<alignment>left</alignment>
+		<pos>0.001 0.141</pos>
+		<size>0.485 0.793</size>
+		<origin>0 0</origin>
+	</image>
+
+	<image name="gamelist_dark_base" extra="true">
+		<path>./../assets/gamelist/gamelist-background-dark-default.png</path>
+		<alignment>left</alignment>
+		<pos>0.018 0.165</pos>
+		<size>0.45 0.745</size>
+		<origin>0 0</origin>
+	</image>
+
+	<textlist name="gamelist">
+		<color>009cff</color>
+		<fontPath>./../fonts/Gilroy-Bold.ttf</fontPath>
+		<pos>0.05 0.185</pos>
+		<size>0.39 0.700</size>
+		<fontSize>0.025</fontSize>
+		<lineSpacing>1.400</lineSpacing>
+		<origin>0 0</origin>		
+		<alignment>left</alignment>
+		<horizontalMargin>0.01</horizontalMargin>
+		<!--<scrollSound>./../_art/assets/move_switch.wav</scrollSound>-->
+		<scrollSound>./../sounds/scroll.wav</scrollSound>
+		<padding>0.0 0.0 0.0 0.0</padding>
+	</textlist>
+
+	<!-- ============================================================ -->
+
+
+
+
+    <!-- ============================================================ -->
+    <!--           VIDEO                                              -->
+    <!-- ============================================================ -->
+
+	<video name="md_video">
+		<origin>0.5 0.5</origin>
+		<pos>0.75 0.4</pos>
+		<maxSize>0.48 0.48</maxSize>
+		<delay>1</delay>
+		<zIndex>2</zIndex>         
+		<showSnapshotNoVideo>true</showSnapshotNoVideo>
+		<showSnapshotDelay>true</showSnapshotDelay>
+		<effect>none</effect>
+	</video>
+
+	<!-- ============================================================ -->
+
+
+
+
+    <!-- ============================================================ -->
+    <!--           METADADOS                                          -->
+    <!-- ============================================================ -->
+
+	<image name="metadados_dark_base_extended" extra="true">
+		<path>./../assets/gamelist/gamelist-metadata-background-dark-extended.svg</path>
+		<pos>0.51 0.65</pos>
+		<size>0.48 0.26</size>
+		<origin>0 0</origin>
+	</image>
+
+
+	<text name="md_name, md_releasedate, md_players, 
+		        md_genre, md_developer, md_publisher, 
+		        md_lastplayed, md_playcount, md_players, md_gametime" extra="true">
+		<fontSize>0.02</fontSize>
+		<size>0.90 0.05</size>
+		<color>FFFFFF</color>
+		<alignment>left</alignment>
+		<fontPath>./../fonts/Gilroy-Bold.ttf</fontPath>
+	</text>
+
+
+	<rating name="md_rating">
+		<pos>0.537 0.695</pos>
+		<size>0.02</size>
+		<filledPath>./../assets/gamelist/rating_filled.png</filledPath>
+		<unfilledPath>./../assets/gamelist/rating_unfilled.png</unfilledPath>
+	</rating>
+
+
+
+
+	<text name="md_name">					<pos>0.537  0.640</pos>								</text>
+	<datetime name="md_releasedate">		<pos>0.537  0.722</pos>		<format>%m/%Y</format>	</datetime>
+	<text name="md_players">				<pos>0.537  0.762</pos>								</text>
+	<text name="md_genre">					<pos>0.670  0.682</pos>								</text>
+	<text name="md_developer">				<pos>0.670  0.722</pos>								</text>
+	<text name="md_publisher">				<pos>0.670  0.762</pos>								</text>
+	<datetime name="md_lastplayed">			<pos>0.886  0.722</pos>								</datetime>
+	<text name="md_playcount">				<pos>0.886  0.762</pos>								</text>
+    <text name="md_gametime">				<pos>0.930  0.762</pos>								</text>
+	
+
+	<text name="md_description">
+		<pos>0.52 0.817</pos>
+		<size>0.46 0.09</size>
+		<fontSize>0.02</fontSize>
+		<lineSpacing>1.3</lineSpacing>
+		<color>FFFFFF</color>
+		<fontPath>./../fonts/Gilroy-Light.ttf</fontPath>
+	</text>
+
+
+	</view>
+</theme>

@@ -1,0 +1,15 @@
+<theme>
+<formatVersion>7</formatVersion>
+
+	<view name="basic">
+	<textlist name="gamelist">
+		<fontPath>./../_art/Acre.otf</fontPath>
+		<fontSize>0.040</fontSize>
+		<alignment>center</alignment>
+		<origin>0 0</origin>
+		<pos>0 0.125</pos>
+		<size>1 .8</size>
+		<lineSpacing>2</lineSpacing>
+	</textlist>
+	</view>	
+</theme>

@@ -1,0 +1,14 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="basic, detailed, video">
+	<textlist name="gamelist">
+		<forceUppercase>1</forceUppercase>
+	</textlist>
+	</view>
+
+	<view name="grid">
+	<text name="md_name">
+		<forceUppercase>1</forceUppercase>
+	</text>
+	</view>	
+</theme>

@@ -1,0 +1,96 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  
+  <variables>
+    <menucolor>008080</menucolor>
+  </variables>
+
+  <!-- Menu Settings -->
+  <view name="menu">
+    <menuText name="menutext">
+      <fontPath>./../fonts/Gilroy-Bold.ttf</fontPath>
+      <fontSize>0.035</fontSize>
+      <selectedColor>121212</selectedColor>
+      <selectorColor>${menucolor}</selectorColor>
+      <color>EBF5FF</color>
+      <separatorColor>EBF5FF</separatorColor>
+    </menuText>
+
+
+    <menuText name="menufooter">
+      <fontPath>./../fonts/Gilroy-Bold.ttf</fontPath>
+      <fontSize>0.03</fontSize>
+      <color>EBF5FF</color>
+    </menuText>
+
+
+    <menuTextSmall name="menutextsmall">
+      <fontPath>./../fonts/Gilroy-Bold.ttf</fontPath>
+      <fontSize>0.03</fontSize>
+      <color>${menucolor}</color>
+    </menuTextSmall>
+
+
+    <menuGroup name="menugroup">
+      <fontPath>./../fonts/Gilroy-Bold.ttf</fontPath>
+      <fontSize>0.03</fontSize>
+      <color>FFFFFF</color>
+      <separatorColor>EBF5FF</separatorColor>
+      <backgroundColor>17222f</backgroundColor>
+    </menuGroup>
+
+
+    <menuText name="menutitle">
+      <fontPath>./../fonts/mania.ttf</fontPath>
+      <fontSize>0.08</fontSize>
+      <color>FFFFFF</color>
+    </menuText>
+
+
+    <menuBackground name="menubg">
+      <path>./../assets/menu/menu.png</path>
+      <fadePath>./../assets/menu/fade.png</fadePath>
+      <size>1 1</size>
+    </menuBackground>
+
+    <menuButton name="menubutton">
+      <path>./../assets/menu/button-normal.png</path>
+      <filledPath>./../assets/menu/button-hover.png</filledPath>
+    </menuButton>
+    
+    <menuSwitch name="menuswitch">
+      <pathOn>./../assets/menu/toggle_on.png</pathOn>
+      <pathOff>./../assets/menu/toggle_off.png</pathOff>
+    </menuSwitch>
+
+    <menuTextEdit name="menutextedit">
+      <inactive>./../assets/menu/input_inactive.svg</inactive>
+      <active>./../assets/menu/input_active.svg</active>
+    </menuTextEdit>
+
+    <menuIcons name="menuicons">
+      
+      <iconBrightnessctl>./../assets/menu/Brightnessctl.png</iconBrightnessctl>
+      <iconUI>./../assets/menu/brush.svg</iconUI>
+      <iconSound>./../assets/menu/volume-high.svg</iconSound>
+      <iconGames>./../assets/menu/gamepad-square.svg</iconGames>
+      <iconSystem>./../assets/menu/cog.svg</iconSystem>
+      <iconScraper>./../assets/menu/image.svg</iconScraper>
+      <iconAdvanced>./../assets/menu/library-shelves.svg</iconAdvanced>
+      <iconQuit>./../assets/menu/exit-to-app.svg</iconQuit>
+
+      
+      <!--      NAO FUNCIONA      -->
+      <iconUpdates>./../assets/menu/update.svg</iconUpdates>
+      <iconControllers>./../assets/menu/gamepad-round.svg</iconControllers>
+      <iconNetwork>./../assets/menu/wifi-strength-3.svg</iconNetwork>
+      <iconRetroachievements>./../assets/menu/trophy.svg</iconRetroachievements>
+      <iconKodi>./../assets/menu/kodi.svg</iconKodi>
+      <iconRestart>./../assets/menu/restart.svg</iconRestart>
+      <iconShutdown>./../assets/menu/power.svg</iconShutdown>
+      <iconFastShutdown>./../assets/menu/power.svg</iconFastShutdown>
+
+
+    </menuIcons>
+  </view>
+</theme>

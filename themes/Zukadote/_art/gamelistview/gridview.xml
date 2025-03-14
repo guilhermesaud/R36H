@@ -1,0 +1,63 @@
+<theme>
+<formatVersion>7</formatVersion>
+
+	<view name="grid">
+	<imagegrid name="gamegrid">
+		<pos>0 0.15</pos>
+		<size>1 .75</size>
+		<margin>0.005 0.010</margin>
+		<padding>0.0 0.0 0.0 0.0</padding>
+		<autoLayout>3 1</autoLayout>
+		<autoLayoutSelectedZoom>1.0</autoLayoutSelectedZoom>
+		<animateSelection>false</animateSelection>
+		<scrollDirection>horizontal</scrollDirection>
+		<zIndex>6</zIndex>
+		<scrollSound>./../assets/Move.wav</scrollSound>
+	</imagegrid>
+
+	<text name="gridtile">
+		<color>00000000</color>
+		<backgroundColor>00000000</backgroundColor>
+		<fontPath>./../fonts/AdobeBlank.ttf</fontPath>
+		<fontSize>0.01</fontSize>
+		<alignment>center</alignment>
+		<visible>false</visible>
+	</text>
+		
+	<text name="md_name">
+		<size>0.95 0.015</size>
+		<pos>0.05 0.08</pos>
+		<origin>0 0</origin>
+		<fontSize>0.04</fontSize>
+		<alignment>left</alignment>
+		<fontPath>./../fonts/Acre.otf</fontPath>
+	</text>
+	
+	<image name="arrowblock" extra="true">
+		<pos>0.01 0.06</pos>
+		<path>./../_art/assets/arrow_block.svg</path>
+		<size>0.023 0.047</size>
+		<origin>0 0</origin>
+	</image>
+
+	<gridtile name="default">
+		<backgroundColor>FFFFFF00</backgroundColor>
+		<backgroundCornerSize>0 0</backgroundCornerSize>
+		<selectionMode>image</selectionMode>
+		<padding>2 2</padding>
+	</gridtile>
+	
+	<!--
+	<text name="md_description, md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
+		<pos>1 1</pos>
+	</text>
+
+	<datetime name="md_lastplayed, md_releasedate">
+		<pos>1 1</pos>
+	</datetime>
+
+	<rating name="md_rating">
+		<pos>1 1</pos>
+	</rating>-->
+	</view>
+</theme>	

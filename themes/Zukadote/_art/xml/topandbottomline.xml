@@ -1,0 +1,23 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system, basic, detailed, video, grid">	
+
+	<image name="bottomline" extra="true">
+		<pos>0.5 0.93</pos>
+		<tile>false</tile>
+		<origin>0.5 0.5</origin>
+		<size>.985 0.005</size>
+		<path>./../_art/assets/box.png</path>
+		<color>${mainColor}</color>
+	</image>
+	
+	<image name="topline" extra="true">
+		<pos>0.5 0.13</pos>
+		<tile>false</tile>
+		<origin>0.5 0.5</origin>
+		<size>.985 0.005</size>
+		<path>./../_art/assets/box.png</path>
+		<color>${mainColor}</color>
+	</image>
+	</view>
+</theme>

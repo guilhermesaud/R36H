@@ -1,0 +1,11 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system, basic, detailed, video, grid">
+	<image name="backgroundextra" extra="true">
+		<path>./../_art/wallpapers/green_04.png</path>
+		<zIndex>-99</zIndex>
+		<tile>false</tile>
+		<size>1 1</size>
+	</image>
+	</view>
+</theme>

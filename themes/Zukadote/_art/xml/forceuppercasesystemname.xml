@@ -1,0 +1,8 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system, basic, detailed, video, grid">
+	<text name="system_name_1" extra="true">
+		<forceUppercase>1</forceUppercase>
+	</text>
+	</view>
+</theme>
