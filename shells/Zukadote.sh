@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#-----------------------------------
+# by Zukadote
+#-----------------------------------
+
 # Determinando pasta de controle
 if [ -d "/opt/system/Tools/PortMaster/" ]; then
     controlfolder="/opt/system/Tools/PortMaster"
@@ -56,15 +60,11 @@ else
   sudo setfont /usr/share/consolefonts/Lat7-Terminus16.psf.gz > /dev/null 2>&1
 fi
 
-
-
 ########################################
 
 GetWifiStatus() {
-    # Verifica se o Wi-Fi esta ligado ou desligado
     if nmcli radio wifi | grep -q "enabled"; then
         wifi_status="\Z2[ON]\Zn"
-        # Obtem o nome da rede Wi-Fi conectada
         wifi_network="\Zb\Z4$(nmcli -t -f name,device connection show --active | grep wlan0 | cut -d':' -f1)\Zn"
         if [[ -z "$wifi_network" ]]; then
             wifi_network=" "
@@ -77,17 +77,30 @@ GetWifiStatus() {
 
 ########################################
 
-MainMenu() {
-    #echo "Entering Main Menu loop..."
+CheckRemoteServices() {
+    if systemctl is-active --quiet smbd || \
+       systemctl is-active --quiet nmbd || \
+       systemctl is-active --quiet ssh || \
+       pgrep filebrowser > /dev/null; then
+       RemoteServiceStatus="\Z2[ON]\Zn"
+    else
+       RemoteServiceStatus="\Z1[OFF]\Zn"
+    fi
+}
 
+########################################
+
+MainMenu() {
     while true; do
         GetWifiStatus
+        CheckRemoteServices
         local dialog_options=( 
-          1 "WIFI ON/OFF" 
-          2 "Backup" 
-          3 "Restaurar" 
-          4 "Temas" 
-          5 "Atualiza Zukadote" 
+          1 "Wi-Fi ON/OFF" 
+          2 "Remote Services | $RemoteServiceStatus"
+          3 "Backup" 
+          4 "Restaurar" 
+          5 "Temas" 
+          6 "Atualiza Zukadote" 
           99 "Exit"
         )
 
@@ -99,17 +112,18 @@ MainMenu() {
             --clear \
             --colors \
             --cancel-label "Exit" \
-            --menu "\Zb\Z4$current_date\Zn     \Z0|\Zn     \Z4$current_time\Zn     \Z0|\Zn $wifi_status $wifi_network" 15 40 15)
+            --menu "\Zb\Z4$current_date\Zn     \Z0|\Zn     \Z4$current_time\Zn     \Z0|\Zn $wifi_status $wifi_network" 15 50 15)
 
         choices=$("${show_dialog[@]}" "${dialog_options[@]}" 2>&1 > /dev/tty0) || userExit
 
         for choice in $choices; do
             case $choice in
             1) ToggleWifi ;;
-            2) Backup ;;
-            3) Restaurar ;;
-            4) Temas ;;
-            5) UpdateZukadote ;;
+            2) ToggleRemoteServices ;;
+            3) Backup ;;
+            4) Restore ;;
+            5) Temas ;;
+            6) UpdateZukadote ;;
             99) userExit ;;
             esac
         done
@@ -129,32 +143,37 @@ ToggleWifi() {
 
 ########################################
 
-Backup() {
-    bash /roms/shells/bkp.sh
+ToggleRemoteServices() {
+    bash /roms/shells/toggle_remote_services.sh
 }
 
 ########################################
 
-Restaurar() {
-    bash /roms/shells/restaura.sh
+Backup() {
+    bash /roms/shells/backup.sh
+}
+
+########################################
+
+Restore() {
+    bash /roms/shells/restore.sh
 }
 
 ########################################
 
 UpdateZukadote() {
-    bash /roms/shells/_Config.sh
+    bash /roms/shells/config.sh
 }
 
 ########################################
 
 Temas() {
-    bash /roms/shells/menu_themes.sh
+    bash /roms/shells/themes_loading.sh
 }
 
 ########################################
 
 userExit() {
-    #echo "Exiting..."
     $ESUDO kill -9 $(pidof oga_controls)
     $ESUDO kill -9 $(pidof gptokeyb)
     $ESUDO systemctl restart oga_events &
@@ -165,7 +184,6 @@ userExit() {
 
 ########################################
 
-#echo "Starting Main Menu..."
 MainMenu
 userExit
 
