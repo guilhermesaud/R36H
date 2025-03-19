@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Diretório base dos backups disponíveis
+# Diretorio base dos backups disponiveis
 BACKUP_DIR="/roms/backup/zukadote"
 
-# Função para listar as pastas disponíveis e permitir a seleção
+# Funï¿½ï¿½o para listar as pastas disponiveis e permitir a selecao
 select_backup_folder() {
     local options=()
     
-    # Ordena as pastas por data de modificação (mais recente primeiro)
+    # Ordena as pastas por data de modificacao (mais recente primeiro)
     for folder in $(ls -td "$BACKUP_DIR"/*/); do
         folder_name=$(basename "$folder")
         options+=("$folder_name" "")
@@ -30,7 +30,7 @@ if [ -z "$RESTORE_DIR" ]; then
     exit 1
 fi
 
-# Arquivo temporário para exibição no dialog
+# Arquivo temporario para exibicao no dialog
 TEMP_FILE="/tmp/restore_progress"
 echo "Restaurando arquivos..." > "$TEMP_FILE"
 
@@ -38,7 +38,7 @@ echo "Restaurando arquivos..." > "$TEMP_FILE"
 ( tail -f "$TEMP_FILE" | dialog --title "Restaurando" --programbox 18 50 ) &
 DIALOG_PID=$!
 
-# Função para restaurar arquivos mantendo a estrutura original
+# Funcao para restaurar arquivos mantendo a estrutura original
 restore_file_with_structure() {
     local src_file="$1"
     local relative_path="${src_file#$RESTORE_DIR/}"
@@ -49,7 +49,7 @@ restore_file_with_structure() {
     echo "$dest_file" >> "$TEMP_FILE"
 }
 
-# Loop para restaurar todos os arquivos do diretório de restauração
+# Loop para restaurar todos os arquivos do diretorio de restauracao
 find "$RESTORE_DIR" -type f | while read -r file; do
     restore_file_with_structure "$file"
 done
@@ -59,5 +59,5 @@ sleep 1
 kill $DIALOG_PID
 rm -f "$TEMP_FILE"
 
-# Mensagem de conclusão
+# Mensagem de conclusao
 dialog --title "Concluido" --msgbox "Restauracao concluida com sucesso! \nBackup: $BACKUP_NAME" 6 50

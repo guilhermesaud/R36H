@@ -90,17 +90,31 @@ CheckRemoteServices() {
 
 ########################################
 
+CheckSyncthingService() {
+    SERVICE="syncthing@ark.service"
+
+    if systemctl is-active --quiet "$SERVICE"; then
+        SyncthingStatus="\Z2[ON]\Zn"
+    else
+        SyncthingStatus="\Z1[OFF]\Zn"
+    fi
+}
+
+########################################
+
 MainMenu() {
     while true; do
         GetWifiStatus
         CheckRemoteServices
+        CheckSyncthingService
         local dialog_options=( 
           1 "Wi-Fi ON/OFF" 
           2 "Remote Services | $RemoteServiceStatus"
-          3 "Backup" 
-          4 "Restaurar" 
-          5 "Temas" 
-          6 "Atualiza Zukadote" 
+          3 "Syncthing | $SyncthingStatus"
+          4 "Backup" 
+          5 "Restaurar" 
+          6 "Temas" 
+          7 "Atualiza Zukadote" 
           99 "Exit"
         )
 
@@ -120,10 +134,11 @@ MainMenu() {
             case $choice in
             1) ToggleWifi ;;
             2) ToggleRemoteServices ;;
-            3) Backup ;;
-            4) Restore ;;
-            5) Temas ;;
-            6) UpdateZukadote ;;
+            3) Syncthing ;;
+            4) Backup ;;
+            5) Restore ;;
+            6) Temas ;;
+            7) UpdateZukadote ;;
             99) userExit ;;
             esac
         done
@@ -145,6 +160,20 @@ ToggleWifi() {
 
 ToggleRemoteServices() {
     bash /roms/shells/toggle_remote_services.sh
+}
+
+########################################
+
+Syncthing() {
+    SERVICE="syncthing@ark.service"
+
+    if systemctl is-active --quiet "$SERVICE"; then
+        sudo systemctl disable --now "$SERVICE"
+        dialog --msgbox "Syncthing foi desativado." 6 40
+    else
+        sudo systemctl enable --now "$SERVICE"
+        dialog --msgbox "Syncthing foi ativado." 6 40
+    fi
 }
 
 ########################################
