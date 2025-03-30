@@ -151,10 +151,10 @@ MainMenu() {
 ToggleWifi() {
     if nmcli radio wifi | grep -q "enabled"; then
         nmcli radio wifi off
-        dialog --msgbox "Wifi ON" 6 40
+        dialog --msgbox "Wifi OFF" 6 40
     else
         nmcli radio wifi on
-        dialog --msgbox "Wifi OFF" 6 40
+        dialog --msgbox "Wifi ON" 6 40
     fi
 }
 
