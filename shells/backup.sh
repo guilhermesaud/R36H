@@ -31,6 +31,8 @@ FILES=(
     "/usr/bin/emulationstation/resources/battery/full.svg"
     "/usr/bin/emulationstation/resources/battery/incharge.svg"
     "/usr/bin/emulationstation/resources/locale/br/emulationstation2.po"
+    "/roms/shells/
+    "/roms/retroarch/"
     "/roms/arcade/gamelist.xml"
     "/roms/dreamcast/gamelist.xml"
     "/roms/gamegear/gamelist.xml"

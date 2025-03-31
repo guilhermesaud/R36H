@@ -21,3 +21,5 @@ sudo chmod 777 /home/ark/.emulationstation/scripts/game-start/run_troca_loading.
 
 #Cria Link Simbolico Zukadote
 sudo ln -s /roms/shells/Zukadote.sh /opt/system/Zukadote.sh
+sudo ln -s /roms/shells/Zukadote.png /opt/system/Zukadote.png
+
