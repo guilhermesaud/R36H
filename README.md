@@ -1,14 +1,18 @@
-<div align="center">
-  <a href="https://github.com/guilhermesaud/R36H"><img src="./shells/Zukadote.png" alt="Zukadote" width="120"></a>
-  <h1>Zukadote</h1>
-  <h4>Menu em Shell Script e Tema para o EmulationStation.</h4>
-
-  ![Commits](https://img.shields.io/github/commit-activity/t/guilhermesaud/R36H)
-  ![Último Commit](https://img.shields.io/github/last-commit/guilhermesaud/R36H)
-  ![PRs](https://img.shields.io/github/issues-pr-closed/guilhermesaud/R36H)
-  ![Última versão](https://img.shields.io/github/v/release/guilhermesaud/R36H?include_prereleases)
-</div>
-
+<table border="0" width="100%" style="border-collapse: collapse;">
+  <tr>
+    <td width="200" valign="top">
+      <img src="./shells/Zukadote.png" alt="Zukadote" width="200">
+    </td>
+    <td valign="top">
+      <h1>Zukadote</h1>
+      <p>Menu em Shell Script e Tema para o EmulationStation.</p>
+      <img src="https://img.shields.io/github/commit-activity/t/guilhermesaud/R36H" alt="Commits">
+      <img src="https://img.shields.io/github/last-commit/guilhermesaud/R36H" alt="Último Commit">
+      <img src="https://img.shields.io/github/issues-pr-closed/guilhermesaud/R36H" alt="PRs Fechados">
+      <img src="https://img.shields.io/github/v/release/guilhermesaud/R36H?include_prereleases" alt="Última Versão">
+    </td>
+  </tr>
+</table>
 
 ---
 
