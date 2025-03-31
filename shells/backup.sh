@@ -14,6 +14,7 @@ FILES=(
     "/etc/emulationstation/es_systems.cfg"
     "/home/ark/.emulationstation/es_settings.cfg"
     "/home/ark/.emulationstation/scripts/game-start/run_troca_loading.sh"
+    "/home/ark/.emulationstation/collections"
     "/home/ark/.config/retroarch/retroarch.cfg"
     "/home/ark/.config/retroarch/config"
     "/opt/cmds/gamelist.xml"
