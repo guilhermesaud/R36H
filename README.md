@@ -31,15 +31,15 @@
 ---
 
 ## 🎨 Tema [**Zukadote**](https://github.com/guilhermesaud/R36H/tree/main/themes/Zukadote)
-<img src="https://github.com/user-attachments/assets/4d3b3ad5-d5f5-4801-9c82-76e83709c41b" width="32%"/>
-<img src="https://github.com/user-attachments/assets/da80764c-1a7a-43f8-a407-25182d4afcaa" width="32%"/>
-<img src="https://github.com/user-attachments/assets/ccb25f05-e295-4d7e-aadf-d4a436f321af" width="32%"/>
-<img src="https://github.com/user-attachments/assets/dcb5a081-f653-46c8-99ad-496643d8a021" width="32%"/>
-<img src="https://github.com/user-attachments/assets/c35056b6-62b9-45d4-b9e2-8b7856f046fa" width="32%"/>
-<img src="https://github.com/user-attachments/assets/13a3c416-b892-4280-a7d4-d419f0429d08" width="32%"/>
-<img src="https://github.com/user-attachments/assets/90fe83c4-7ab5-4876-bfdd-608e53cbbc24" width="32%"/>
-<img src="https://github.com/user-attachments/assets/f6f36065-9a33-4e25-9ebf-5d30b807c126" width="32%"/>
-<img src="https://github.com/user-attachments/assets/50a8a9a1-4a25-45a1-a2ef-e573ce455040" width="32%"/>
+<img src="https://github.com/user-attachments/assets/4d3b3ad5-d5f5-4801-9c82-76e83709c41b" width="33%"/>
+<img src="https://github.com/user-attachments/assets/da80764c-1a7a-43f8-a407-25182d4afcaa" width="33%"/>
+<img src="https://github.com/user-attachments/assets/ccb25f05-e295-4d7e-aadf-d4a436f321af" width="33%"/>
+<img src="https://github.com/user-attachments/assets/dcb5a081-f653-46c8-99ad-496643d8a021" width="33%"/>
+<img src="https://github.com/user-attachments/assets/c35056b6-62b9-45d4-b9e2-8b7856f046fa" width="33%"/>
+<img src="https://github.com/user-attachments/assets/13a3c416-b892-4280-a7d4-d419f0429d08" width="33%"/>
+<img src="https://github.com/user-attachments/assets/90fe83c4-7ab5-4876-bfdd-608e53cbbc24" width="33%"/>
+<img src="https://github.com/user-attachments/assets/f6f36065-9a33-4e25-9ebf-5d30b807c126" width="33%"/>
+<img src="https://github.com/user-attachments/assets/50a8a9a1-4a25-45a1-a2ef-e573ce455040" width="33%"/>
 
 ---
 
