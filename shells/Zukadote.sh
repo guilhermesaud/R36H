@@ -114,7 +114,7 @@ MainMenu() {
           4 "Backup" 
           5 "Restaurar" 
           6 "Temas" 
-          7 "Atualiza Zukadote" 
+          7 "Config Zukadote" 
           99 "Exit"
         )
 
@@ -138,7 +138,7 @@ MainMenu() {
             4) Backup ;;
             5) Restore ;;
             6) Temas ;;
-            7) UpdateZukadote ;;
+            7) ConfigZukadote ;;
             99) userExit ;;
             esac
         done
@@ -192,14 +192,14 @@ Restore() {
 
 ########################################
 
-UpdateZukadote() {
-    bash /roms/shells/config.sh
+Temas() {
+    bash /roms/shells/themes_loading.sh
 }
 
 ########################################
 
-Temas() {
-    bash /roms/shells/themes_loading.sh
+ConfigZukadote() {
+    bash /roms/shells/config.sh
 }
 
 ########################################
