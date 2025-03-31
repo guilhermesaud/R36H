@@ -36,6 +36,7 @@
 		<logoScale>1</logoScale>
 		<logoSize>0.45 0.45</logoSize>
 		<maxLogoCount>3</maxLogoCount>
+		<scrollSound>./../_art/sounds/scroll.wav</scrollSound>
 	</carousel>
 
 	<text name="systemInfo">
